@@ -9,6 +9,36 @@ import (
 func (c *Checker) GetStringType() *Type {
 	return c.stringType
 }
+func (c *Checker) GetNumberType() *Type {
+	return c.numberType
+}
+func (c *Checker) GetBooleanType() *Type {
+	return c.booleanType
+}
+func (c *Checker) GetErrorType() *Type {
+	return c.errorType
+}
+func (c *Checker) GetUnknownType() *Type {
+	return c.unknownType
+}
+func (c *Checker) GetUndefinedType() *Type {
+	return c.undefinedType
+}
+func (c *Checker) GetNullType() *Type {
+	return c.nullType
+}
+func (c *Checker) GetAnyType() *Type {
+	return c.anyType
+}
+func (c *Checker) GetNeverType() *Type {
+	return c.neverType
+}
+func (c *Checker) GetVoidType() *Type {
+	return c.voidType
+}
+func (c *Checker) GetThisType() *Type {
+	return c.bigintType
+}
 
 func (c *Checker) GetUnknownSymbol() *ast.Symbol {
 	return c.unknownSymbol
