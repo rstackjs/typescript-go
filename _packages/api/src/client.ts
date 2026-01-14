@@ -29,12 +29,12 @@ export class Client {
         );
 
         if (options.fs) {
-            for (const [key, callback] of Object.entries(options.fs)) {
-                this.channel.registerCallback(key, (_, arg) => {
-                    const result = callback(JSON.parse(arg));
-                    return JSON.stringify(result) ?? "";
-                });
-            }
+            // for (const [key, callback] of Object.entries(options.fs)) {
+            //     this.channel.registerCallback(key, (_, arg) => {
+            //         const result = callback(JSON.parse(arg));
+            //         return JSON.stringify(result) ?? "";
+            //     });
+            // }
         }
     }
 
