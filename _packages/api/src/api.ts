@@ -16,7 +16,7 @@ import type {
     TypeResponse,
 } from "./proto.ts";
 
-export { SymbolFlags, TypeFlags };
+export { SymbolFlags, TypeFlags, RemoteSourceFile, type Node };
 
 export interface APIOptions {
     tsserverPath: string;
