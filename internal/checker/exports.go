@@ -200,3 +200,15 @@ func (c *Checker) GetIndexSignaturesAtLocation(node *ast.Node) []*ast.Node {
 func (c *Checker) GetResolvedSymbol(node *ast.Node) *ast.Symbol {
 	return c.getResolvedSymbol(node)
 }
+
+// GetTypeArguments returns the type arguments for a generic type reference.
+// For example, for Array<string>, it returns [string].
+func (c *Checker) GetTypeArguments(t *Type) []*Type {
+	return c.getTypeArguments(t)
+}
+
+// GetBaseTypes returns the base types of an interface or class type.
+// For a class, this includes the extended class. For an interface, this includes all extended interfaces.
+func (c *Checker) GetBaseTypes(t *Type) []*Type {
+	return c.getBaseTypes(t)
+}
