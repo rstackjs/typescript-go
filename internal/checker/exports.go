@@ -216,3 +216,9 @@ func (c *Checker) GetSymbolFlags(symbol *ast.Symbol) ast.SymbolFlags {
 func (c *Checker) GetBaseTypes(t *Type) []*Type {
 	return c.getBaseTypes(t)
 }
+
+// GetTypeArguments returns the type arguments for a generic type reference.
+// For example, for Array<string>, it returns [string].
+func (c *Checker) GetTypeArguments(t *Type) []*Type {
+	return c.getTypeArguments(t)
+}
