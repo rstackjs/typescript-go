@@ -7,7 +7,7 @@ import type {
 } from "@typescript/ast";
 import { Client } from "./client.ts";
 import type { FileSystem } from "./fs.ts";
-import { RemoteSourceFile } from "./node.ts";
+import { RemoteSourceFile, RemoteNode, RemoteNodeList } from "./node.ts";
 import { ObjectRegistry } from "./objectRegistry.ts";
 import type {
     ConfigResponse,
@@ -16,7 +16,7 @@ import type {
     TypeResponse,
 } from "./proto.ts";
 
-export { SymbolFlags, TypeFlags, RemoteSourceFile, type Node };
+export { SymbolFlags, TypeFlags, RemoteSourceFile, RemoteNode, RemoteNodeList, type Node };
 
 export interface APIOptions {
     tsserverPath: string;
